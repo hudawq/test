@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>e园区</title>
+
+    <!-- Bootstrap -->
+    <link href="./lib/bootstrap-3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./lib/bootstrap-3.0.3/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <link href="./css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Begin page content -->
+    <div class="container-fluid">
+        <div class="header">
+            <div class="container-fluid">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><div class="text-center"><a class="pull-left" title="返回" href="javascript:history.back();"><span class="glyphicon glyphicon-chevron-left"></span></a>我要咨询</div></div>
+                    <div class="panel-body" id="pnlBody">
+                        <!--<div class="row">
+                            <div class="col-xs-12">
+                                <div class="highlight">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h4>流程说明</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            ①填写需求
+                                        </div>
+                                        <div class="col-xs-4">
+                                            ②机构马上应标
+                                        </div>
+                                        <div class="col-xs-4">
+                                            ③服务评价
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <form class="form" role="form">
+                                    <div class="form-group">
+                                        <label for="contactName">联系人</label>
+                                        <input type="text" id="contactName" class="form-control" placeholder="联系人" required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">联系电话:</label>
+                                        <input type="tel" id="phone" class="form-control" placeholder="联系电话" required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">电子邮箱:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="电子邮箱">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="content">咨询内容</label>
+                                        <textarea id="content" class="form-control" placeholder="咨询内容" required="required"></textarea>
+                                    </div>
+                                    <button class="btn btn-default" type="submit">提交</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="btn-group btn-group-justified" id="bottomMenu">
+                        <div class="btn-group dropup">
+                            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">找服务</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="Index.html">服务产品</a></li>
+                                <li class="divider"></li>
+                                <li><a href="CompanyIndex.html">服务机构</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group dropup">
+                            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">发需求</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="SendRequirement.html">发布需求</a></li>
+                                <li class="divider"></li>
+                                <li><a href="QueryRequirement.html">查询状态</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group dropup">
+                            <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">政策通</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="NewsList.html">最新资讯</a></li>
+                                <li class="divider"></li>
+                                <li><a href="Consult.html">政策咨询</a></li>
+                                <li class="divider"></li>
+                                <li><a href="tel:13594694312">电话咨询</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Bootstrap Scripts -->
+            <script src="./lib/jquery/jquery-1.10.2.min.js"></script>
+            <script src="./lib/bootstrap-3.0.3/js/bootstrap.min.js"></script>
+            <script src="./lib/bootstrap-3.0.3/js/holder.js"></script>
+
+            <script type="text/javascript">
+
+                function menuResize() {
+                    $("#bottomMenu .dropdown-menu").css("min-width", "0px");
+                    var width = parseInt($("#bottomMenu .dropup").width()) - 4;
+                    $("#bottomMenu .dropdown-menu").width(width + "px");
+                }
+                $(function () {
+                    menuResize();
+                    $(window).resize(function () {
+                        menuResize();
+                    });
+                });
+            </script>
+</body>
+</html>
